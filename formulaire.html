@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Mon Premier Formulaire</title>
+</head>
+<body>
+<h1>Votre Avis Nous Intéreese</h1>
+<table>
+  <tr>
+    <td>
+<form>
+<fieldset>
+<legend>Informations Personnelles</legend>
+<ol>
+  <li><label for="Nom">Nom</label>
+      <input required  type="text" id="Nom"  /></li>
+<li><label for="Date de naissance">Date de naissance</label>
+    <input  required type="date" id="Date de naissance"  name="Date de naissance"  />
+</li>
+<li><label for="url">Site</label>
+    <input required type="url" id="url"  name="url" placeholder="http://monsite.com" />
+</li>
+<li><label for="Emploi">Emploi</label>
+  <input required type="text" list="Emploilist"  id="Emploi"  name="Emploi" />
+    <datalist id="Emploilist">
+      <option label="Etudiant" value="Etudiant"/ >
+      <option label="Administrateur Réseau" value="Administrateur Réseau" />
+      <option label="Dévloppeur Web" value="Dévloppeur Web"/>
+      <option label="Web designer" value="Web designer" />
+      <option label="DevOps" value="DevOps"/>
+      </datalist>
+</li>
+<li><label for="Approx.Salaire annuel">Approx.Salaire annuel</label>
+<br>  <input min="0"  step="1000"
+required type="number" id="Approx.Salaire annuel"  name="Approx.Salaire annuel" placeholder="$"/>
+</li>
+</ol>
+</fieldset>
+</form>
+</td>
+<td></td>
+<td>
+<form>
+<fieldset>
+<legend>Informations de Contact</legend>
+<ol>
+<li><label for="Adresse linge 1">Adresse linge 1</label>
+  <br>  <input required type="text" id="Adresse linge 1"  />
+</li>
+<li><label for="Adresse linge 2">Adresse linge 2</label>
+  <br>  <input required type="text" id="Adresse linge 2"  />
+</li>
+<li><label for="Pays">Pays</label>
+    <input  list="Payslist" required type="text" id="Pays" name="Pays"  />
+    <datalist id="Payslist">
+      <option lable=" Algerie" value="Algerie "/>
+      <option lable="Tunisie" value="Tunisie"/>
+      <option lable="Maroc" value="Maroc "/>
+      </datalist>
+</li>
+<li><label for="Tél">Tél</label>
+    <input required type="tel" id="Tél"  name="Tél" placeholder="eg: +213 67..."/>
+</li>
+<li><label for="Courriel">Courriel</label>
+    <input  required type="email" id="Courriel"  name="Courriel" />
+</li>
+</ol>
+</fieldset>
+</form>
+</td>
+</tr>
+</table>
+<h1>Préférences</h1>
+<div>
+<label for="Choisir une couleur">Choisir une couleur</label>
+<input type="color" id="Choisir une couleur"
+name="Choisir une couleur" value="black">
+</div>
+<div>
+<label for="range">Sur une échelle de 1 à 10, quel est
+  votre degré d'enthousiasme pour HTML5 ?
+</label>
+<input min="1"max="10" step="1"
+required type="range" id="range" name="range"/>
+</div>
+
+<div>
+<input type="submit" name="" value="Envoyer"/></div>
+</body>
+</html>
